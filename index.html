@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Bootstrap Portfolio Bon Crowder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/d2644d9941.js"></script>
+
+    <style>
+      /*.largeish {
+        font-size: 2em;
+      }*/
+      /*.btn-social-icon.btn-lg {
+          height: 45px;
+          width: 45px;
+          padding-left: 0;
+          padding-right: 0;
+      }*/
+      /*.btn-github {
+          color: #fff;
+          background-color: #444;
+          border-color: rgba(0,0,0,.2);
+      }*/
+      /*.btn-group-lg>.btn, .btn-lg {
+          padding: 10px 16px;
+          font-size: 18px;
+          line-height: 1.3333333;
+          border-radius: 6px;
+      }*/
+
+      .btn-social{
+        position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .btn-social :first-child{
+        position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+      .btn-social.btn-lg{
+        padding-left:61px}
+      .btn-social.btn-lg :first-child{
+          line-height:45px;width:45px;font-size:1.8em}
+      /*.btn-social.btn-sm{
+        padding-left:38px}
+      .btn-social.btn-sm :first-child{
+        line-height:28px;width:28px;font-size:1.4em}*/
+      /*.btn-social.btn-xs{
+        padding-left:30px}
+      .btn-social.btn-xs :first-child{
+        line-height:20px;width:20px;font-size:1.2em}*/
+      .btn-social-icon{
+        position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}
+      .btn-social-icon :first-child{
+        position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+      .btn-social-icon.btn-lg{
+        padding-left:61px}.btn-social-icon.btn-lg :first-child{
+          line-height:45px;width:45px;font-size:1.8em}
+      /*.btn-social-icon.btn-sm{
+        padding-left:38px}
+      .btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+      .btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}*/
+      .btn-social-icon :first-child{
+        border:none;text-align:center;width:100% !important}
+      .btn-social-icon.btn-lg{
+        height:45px;width:45px;padding-left:0;padding-right:0}
+      /*.btn-social-icon.btn-sm{
+        height:30px;width:30px;padding-left:0;padding-right:0}
+      .btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}*/
+      /*.btn-bitbucket{color:#fff;background-color:#205081;border-color:rgba(0,0,0,0.2)}.btn-bitbucket:hover,.btn-bitbucket:focus,.btn-bitbucket:active,.btn-bitbucket.active,.open .dropdown-toggle.btn-bitbucket{color:#fff;background-color:#183c60;border-color:rgba(0,0,0,0.2)}
+      .btn-bitbucket:active,.btn-bitbucket.active,.open .dropdown-toggle.btn-bitbucket{background-image:none}
+      .btn-bitbucket.disabled,.btn-bitbucket[disabled],fieldset[disabled] .btn-bitbucket,.btn-bitbucket.disabled:hover,.btn-bitbucket[disabled]:hover,fieldset[disabled] .btn-bitbucket:hover,.btn-bitbucket.disabled:focus,.btn-bitbucket[disabled]:focus,fieldset[disabled] .btn-bitbucket:focus,.btn-bitbucket.disabled:active,.btn-bitbucket[disabled]:active,fieldset[disabled] .btn-bitbucket:active,.btn-bitbucket.disabled.active,.btn-bitbucket[disabled].active,fieldset[disabled] .btn-bitbucket.active{background-color:#205081;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-dropbox{color:#fff;background-color:#1087dd;border-color:rgba(0,0,0,0.2)}.btn-dropbox:hover,.btn-dropbox:focus,.btn-dropbox:active,.btn-dropbox.active,.open .dropdown-toggle.btn-dropbox{color:#fff;background-color:#0d70b7;border-color:rgba(0,0,0,0.2)}
+      .btn-dropbox:active,.btn-dropbox.active,.open .dropdown-toggle.btn-dropbox{background-image:none}
+      .btn-dropbox.disabled,.btn-dropbox[disabled],fieldset[disabled] .btn-dropbox,.btn-dropbox.disabled:hover,.btn-dropbox[disabled]:hover,fieldset[disabled] .btn-dropbox:hover,.btn-dropbox.disabled:focus,.btn-dropbox[disabled]:focus,fieldset[disabled] .btn-dropbox:focus,.btn-dropbox.disabled:active,.btn-dropbox[disabled]:active,fieldset[disabled] .btn-dropbox:active,.btn-dropbox.disabled.active,.btn-dropbox[disabled].active,fieldset[disabled] .btn-dropbox.active{background-color:#1087dd;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+      .btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+      .btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-flickr{color:#fff;background-color:#ff0084;border-color:rgba(0,0,0,0.2)}.btn-flickr:hover,.btn-flickr:focus,.btn-flickr:active,.btn-flickr.active,.open .dropdown-toggle.btn-flickr{color:#fff;background-color:#d6006f;border-color:rgba(0,0,0,0.2)}
+      .btn-flickr:active,.btn-flickr.active,.open .dropdown-toggle.btn-flickr{background-image:none}
+      .btn-flickr.disabled,.btn-flickr[disabled],fieldset[disabled] .btn-flickr,.btn-flickr.disabled:hover,.btn-flickr[disabled]:hover,fieldset[disabled] .btn-flickr:hover,.btn-flickr.disabled:focus,.btn-flickr[disabled]:focus,fieldset[disabled] .btn-flickr:focus,.btn-flickr.disabled:active,.btn-flickr[disabled]:active,fieldset[disabled] .btn-flickr:active,.btn-flickr.disabled.active,.btn-flickr[disabled].active,fieldset[disabled] .btn-flickr.active{background-color:#ff0084;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-foursquare{color:#fff;background-color:#0072b1;border-color:rgba(0,0,0,0.2)}.btn-foursquare:hover,.btn-foursquare:focus,.btn-foursquare:active,.btn-foursquare.active,.open .dropdown-toggle.btn-foursquare{color:#fff;background-color:#005888;border-color:rgba(0,0,0,0.2)}
+      .btn-foursquare:active,.btn-foursquare.active,.open .dropdown-toggle.btn-foursquare{background-image:none}
+      .btn-foursquare.disabled,.btn-foursquare[disabled],fieldset[disabled] .btn-foursquare,.btn-foursquare.disabled:hover,.btn-foursquare[disabled]:hover,fieldset[disabled] .btn-foursquare:hover,.btn-foursquare.disabled:focus,.btn-foursquare[disabled]:focus,fieldset[disabled] .btn-foursquare:focus,.btn-foursquare.disabled:active,.btn-foursquare[disabled]:active,fieldset[disabled] .btn-foursquare:active,.btn-foursquare.disabled.active,.btn-foursquare[disabled].active,fieldset[disabled] .btn-foursquare.active{background-color:#0072b1;border-color:rgba(0,0,0,0.2)}*/
+      .btn-github{color:#fff;background-color:#444;border-color:rgba(0,0,0,0.2)}.btn-github:hover,.btn-github:focus,.btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{color:#fff;background-color:#303030;border-color:rgba(0,0,0,0.2)}
+      .btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{background-image:none}
+      .btn-github.disabled,.btn-github[disabled],fieldset[disabled] .btn-github,.btn-github.disabled:hover,.btn-github[disabled]:hover,fieldset[disabled] .btn-github:hover,.btn-github.disabled:focus,.btn-github[disabled]:focus,fieldset[disabled] .btn-github:focus,.btn-github.disabled:active,.btn-github[disabled]:active,fieldset[disabled] .btn-github:active,.btn-github.disabled.active,.btn-github[disabled].active,fieldset[disabled] .btn-github.active{background-color:#444;border-color:rgba(0,0,0,0.2)}
+      /*.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+      .btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+      .btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-instagram{color:#fff;background-color:#3f729b;border-color:rgba(0,0,0,0.2)}.btn-instagram:hover,.btn-instagram:focus,.btn-instagram:active,.btn-instagram.active,.open .dropdown-toggle.btn-instagram{color:#fff;background-color:#335d7e;border-color:rgba(0,0,0,0.2)}
+      .btn-instagram:active,.btn-instagram.active,.open .dropdown-toggle.btn-instagram{background-image:none}
+      .btn-instagram.disabled,.btn-instagram[disabled],fieldset[disabled] .btn-instagram,.btn-instagram.disabled:hover,.btn-instagram[disabled]:hover,fieldset[disabled] .btn-instagram:hover,.btn-instagram.disabled:focus,.btn-instagram[disabled]:focus,fieldset[disabled] .btn-instagram:focus,.btn-instagram.disabled:active,.btn-instagram[disabled]:active,fieldset[disabled] .btn-instagram:active,.btn-instagram.disabled.active,.btn-instagram[disabled].active,fieldset[disabled] .btn-instagram.active{background-color:#3f729b;border-color:rgba(0,0,0,0.2)}*/
+      .btn-linkedin{
+        color:#fff;background-color:#007bb6;border-color:rgba(0,0,0,0.2)}.btn-linkedin:hover,.btn-linkedin:focus,.btn-linkedin:active,.btn-linkedin.active,.open .dropdown-toggle.btn-linkedin{color:#fff;background-color:#005f8d;border-color:rgba(0,0,0,0.2)}
+      .btn-linkedin:active,.btn-linkedin.active,.open .dropdown-toggle.btn-linkedin{
+        background-image:none}
+      .btn-linkedin.disabled,.btn-linkedin[disabled],fieldset[disabled] .btn-linkedin,.btn-linkedin.disabled:hover,.btn-linkedin[disabled]:hover,fieldset[disabled] .btn-linkedin:hover,.btn-linkedin.disabled:focus,.btn-linkedin[disabled]:focus,fieldset[disabled] .btn-linkedin:focus,.btn-linkedin.disabled:active,.btn-linkedin[disabled]:active,fieldset[disabled] .btn-linkedin:active,.btn-linkedin.disabled.active,.btn-linkedin[disabled].active,fieldset[disabled] .btn-linkedin.active{background-color:#007bb6;border-color:rgba(0,0,0,0.2)}
+      .btn-stack-overflow{
+        color:#fff;background-color:#F48024;border-color:rgba(0,0,0,0.2)}.btn-linkedin:hover,.btn-stack-overflow:focus,.btn-stack-overflow:active,.btn-stack-overflow.active,.open .dropdown-toggle.btn-stack-overflow{color:#fff;background-color:#F48024;border-color:rgba(0,0,0,0.2)}
+      .btn-stack-overflow:active,.btn-stack-overflow.active,.open .dropdown-toggle.btn-stack-overflow{
+        background-image:none}
+      .btn-stack-overflow.disabled,.btn-stack-overflow[disabled],fieldset[disabled] .btn-stack-overflow,.btn-stack-overflow.disabled:hover,.btn-stack-overflow[disabled]:hover,fieldset[disabled] .btn-stack-overflow:hover,.btn-stack-overflow.disabled:focus,.btn-stack-overflow[disabled]:focus,fieldset[disabled] .btn-stack-overflow:focus,.btn-stack-overflow.disabled:active,.btn-stack-overflow[disabled]:active,fieldset[disabled] .btn-stack-overflow:active,.btn-stack-overflow.disabled.active,.btn-stack-overflow[disabled].active,fieldset[disabled] .btn-stack-overflow.active{background-color:#007bb6;border-color:rgba(0,0,0,0.2)}
+
+      /*.btn-tumblr{color:#fff;background-color:#2c4762;border-color:rgba(0,0,0,0.2)}.btn-tumblr:hover,.btn-tumblr:focus,.btn-tumblr:active,.btn-tumblr.active,.open .dropdown-toggle.btn-tumblr{color:#fff;background-color:#1f3346;border-color:rgba(0,0,0,0.2)}
+      .btn-tumblr:active,.btn-tumblr.active,.open .dropdown-toggle.btn-tumblr{background-image:none}
+      .btn-tumblr.disabled,.btn-tumblr[disabled],fieldset[disabled] .btn-tumblr,.btn-tumblr.disabled:hover,.btn-tumblr[disabled]:hover,fieldset[disabled] .btn-tumblr:hover,.btn-tumblr.disabled:focus,.btn-tumblr[disabled]:focus,fieldset[disabled] .btn-tumblr:focus,.btn-tumblr.disabled:active,.btn-tumblr[disabled]:active,fieldset[disabled] .btn-tumblr:active,.btn-tumblr.disabled.active,.btn-tumblr[disabled].active,fieldset[disabled] .btn-tumblr.active{background-color:#2c4762;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-twitter{color:#fff;background-color:#55acee;border-color:rgba(0,0,0,0.2)}.btn-twitter:hover,.btn-twitter:focus,.btn-twitter:active,.btn-twitter.active,.open .dropdown-toggle.btn-twitter{color:#fff;background-color:#309aea;border-color:rgba(0,0,0,0.2)}
+      .btn-twitter:active,.btn-twitter.active,.open .dropdown-toggle.btn-twitter{background-image:none}
+      .btn-twitter.disabled,.btn-twitter[disabled],fieldset[disabled] .btn-twitter,.btn-twitter.disabled:hover,.btn-twitter[disabled]:hover,fieldset[disabled] .btn-twitter:hover,.btn-twitter.disabled:focus,.btn-twitter[disabled]:focus,fieldset[disabled] .btn-twitter:focus,.btn-twitter.disabled:active,.btn-twitter[disabled]:active,fieldset[disabled] .btn-twitter:active,.btn-twitter.disabled.active,.btn-twitter[disabled].active,fieldset[disabled] .btn-twitter.active{background-color:#55acee;border-color:rgba(0,0,0,0.2)}*/
+      /*.btn-vk{color:#fff;background-color:#587ea3;border-color:rgba(0,0,0,0.2)}.btn-vk:hover,.btn-vk:focus,.btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{color:#fff;background-color:#4a6a89;border-color:rgba(0,0,0,0.2)}
+      .btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{background-image:none}
+      .btn-vk.disabled,.btn-vk[disabled],fieldset[disabled] .btn-vk,.btn-vk.disabled:hover,.btn-vk[disabled]:hover,fieldset[disabled] .btn-vk:hover,.btn-vk.disabled:focus,.btn-vk[disabled]:focus,fieldset[disabled] .btn-vk:focus,.btn-vk.disabled:active,.btn-vk[disabled]:active,fieldset[disabled] .btn-vk:active,.btn-vk.disabled.active,.btn-vk[disabled].active,fieldset[disabled] .btn-vk.active{background-color:#587ea3;border-color:rgba(0,0,0,0.2)}*/
+    </style>
+  </head>
+
+  <body>
+    <div
+    <nav class="navbar navbar-default">
+<div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button> -->
+    <a class="navbar-brand" href="#">Bon Crowder</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+    <!-- <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li>
+    </ul> -->
+    <!-- <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form> -->
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <!-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li> -->
+    </ul>
+  <!-- </div> /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <!-- <h1 class="about">About Me</h1> -->
+          <div class="page-header">
+            <h1>About Me <small>(Bon Crowder)</small></h1>
+          </div>
+          <!-- <hr> -->
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+                <img src="assets/images/BonCrowderYounger.jpg" alt="Bon Crowder">
+              </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+            <!-- <img src="assets/images/BonCrowderYounger.jpg" class="headshot" alt="Bon Crowder"> -->
+
+        </div>
+        <div class="col-sm-4">
+          <!-- <aside class="widget"> -->
+            <!-- <h1 class="about">Connect with Me</h1>
+            <hr> -->
+            <div class="page-header">
+              <h1>Connect With Me</h1>
+            </div>
+            <!-- <a class="btn btn-block btn-social btn-github">
+                <span class="fa fa-github"></span>
+              </a> -->
+              <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/mathfour" title="Bon on GitHub" rel="nofollow">
+                  <span class="fa fa-github"></span>
+              </a>
+              <a class="btn btn-lg btn-social-icon btn-linkedin" href="https://github.com/mathfour" title="Bon on LinkedIn" rel="nofollow">
+                  <span class="fa fa-linkedin"></span>
+              </a>
+              <a class="btn btn-lg btn-social-icon btn-stack-overflow" href="http://stackoverflow.com/users/5210485/bon-crowder-at-mathfour" title="Bon on Stack Overflow" rel="nofollow">
+                  <span class="fa fa-stack-overflow"></span>
+              </a>
+            <!-- <a href="https://github.com/mathfour">
+              <img src="assets/images/1488835852_github_square_black.png" class="socialIcons" alt="Bon on GitHub"></a>
+            <a href="https://www.linkedin.com/in/boncrowder">
+              <img src="assets/images/1488835880_linkedin_square_color.png" class="socialIcons" alt="Bon on LinkedIn"></a>
+            <a href="http://stackoverflow.com/users/5210485/bon-crowder-at-mathfour">
+              <img src="assets/images/1488835897_stackoverflow.png" class="socialIcons" alt="Bon on StackOverflow"></a> -->
+          <!-- </aside> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <!-- <div class="panel panel-default"> -->
+                <div class="panel-footer">
+                  &#174; Copyright 2017 Bon Crowder
+                </div>
+                <footer class="footer">
+                      <div class="container">
+                        <p class="text-muted center">&#174; Copyright 2017 Bon Crowder</p>
+                      </div>
+                    </footer>              <!-- </div>               -->
+              <!-- <footer>
+                &#174; Copyright 2017 Bon Crowder
+              </footer> -->
+
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
